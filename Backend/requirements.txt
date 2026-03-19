@@ -1,0 +1,26 @@
+# API server
+fastapi
+uvicorn[standard]
+
+# Database
+peewee
+
+# Activity tracking
+pynput
+
+# Camera / computer vision (optional, for room tracking)
+mediapipe
+opencv-python
+
+# LLM (Ollama client)
+ollama
+
+# External APIs
+requests
+python-dotenv
+
+# Calendar parsing (if using .ics files)
+icalendar
+
+# Scheduling (for periodic summaries)
+apscheduler
