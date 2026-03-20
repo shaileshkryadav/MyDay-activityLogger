@@ -25,7 +25,8 @@ class WeeklySummary(BaseModel):
     created_at = DateTimeField(default=datetime.datetime.now)
 
 def init_db():
-    db.connect()
+    if db.is_closed():
+        db.connect()
     db.create_tables([ActivityLog, DailySummary, WeeklySummary], safe=True)
     print("Database ready")
 
